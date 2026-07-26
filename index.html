@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Yadav - Portfolio</title>
+    <script>
+        try {
+            const savedTheme = localStorage.getItem('theme');
+            const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.dataset.theme = savedTheme || preferredTheme;
+        } catch (error) {
+            document.documentElement.dataset.theme = 'light';
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="site-watermark" aria-hidden="true">
+       
+    </div>
+    <div class="preloader" aria-hidden="true">
+        <div class="loader-mark">
+            
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Shivam Yadav logo">
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Certifications">Certificationss</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Achievement">Achievement</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <a href="file:///C:/Users/shiva/OneDrive/Documents/ShivamMe/Shivam_Yadav_Resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-download"></i>
+                <span>Resume</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hero-content">
+            <h1>Hi! I'm <span class="highlight">Shivam Yadav</span></h1>
+            <p class="typing-text">Innovator by Heart, Coder by Passion</p>
+            <p class="hero-description">I love turning ideas into reality through code. From building dynamic web apps to solving challenges in competitive programming.</p>
+            <div class="social-links">
+                <a href="https://github.com/shivam33yadav" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shivam-yadav6387/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Contact Me</a>
+                <a href="https://drive.google.com/file/d/1Hf6V6pWwxTBGrLNeVTUURXjuxgBA5BXz/view?usp=drive_link" class="resume-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> My Resume
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual tilt-card" data-tilt>
+            <div class="profile-orbit"></div>
+            <img src="My Img.jpeg" alt="Shivam Yadav profile">
+            <div class="floating-badge badge-code"><i class="fas fa-code"></i> MERN</div>
+            <div class="floating-badge badge-rating"><i class="fas fa-trophy"></i> 300+ Problems</div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Explore my journey</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <div class="about-description">
+                    <p>Hi, I'm a Software Developer and Competitive Programmer with a passion for solving complex problems and building innovative solutions. Currently pursuing my B.Tech in Computer Science Engineering at Babu Banarasi Das University, Lucknow. I specialize in Data Structures & Algorithms (DSA) and Full-Stack Development (MERN).</p>
+                    <p>I have solved 500+ problems, showcasing my strong problem-solving skills and algorithmic expertise. I love developing efficient, scalable, and user-centric applications, bringing ideas to life through code.</p>
+                    <p>Always eager to learn and grow, I am driven by the challenge of optimizing solutions and crafting seamless digital experiences. Let's build something amazing together! 🚀</p>
+                </div>
+                <div class="about-details">
+                    <div class="detail">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack Development</span>
+                        <p>Building end-to-end web applications with modern technologies</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Software Development</span>
+                        <p>Developing robust and scalable software solutions</p>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                        <p>B.Tech in Computer Science Engineering at Babu Banarasi Das University</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="My Img.jpeg" alt="About Me">
+            </div>
+        </div>
+    </section>
+
+    <!--Certification-->
+<section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="certification">
+        <h3>Generative AI Hackathon</h3>
+        <p><strong>Issued By:</strong> IIT Kanpur</p>
+        <p>Successfully completed and participated in the Generative AI Hackathon conducted by IIT Kanpur.</p>
+    </div>
+
+    <div class="certification">
+        <h3>Core & Advanced Java</h3>
+        <p><strong>Issued By:</strong> Udemy</p>
+        <p>Completed comprehensive training covering Core Java, Advanced Java, JDBC, Servlets, Collections, Multithreading, and Object-Oriented Programming concepts.</p>
+    </div>
+
+    <div class="certification">
+        <h3>Full Stack Web Development</h3>
+        <p><strong>Issued By:</strong> Apna College (Shradha Khapra)</p>
+        <p>Completed Full Stack Web Development training covering HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, REST APIs, and Git/GitHub.</p>
+    </div>
+
+    <div class="certification">
+        <h3>Data Structures & Algorithms (DSA)</h3>
+        <p><strong>Issued By:</strong> Apna College (Shradha Khapra)</p>
+        <p>Completed an in-depth DSA course covering Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Dynamic Programming, Greedy Algorithms, and Problem Solving.</p>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Java</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-java"></i> Core Java</span>
+                                <span><i class="fas fa-cogs"></i> OOP</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Core Java programming with object-oriented concepts</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>Core Java Fundamentals</li>
+                                        <li>Object-Oriented Programming</li>
+                                        <li>Java Collections Framework</li>
+                                        <li>Exception Handling</li>
+                                        <li>Multithreading</li>
+                                        <li>Java 8+ Features</li>
+                                        <li>Spring Boot Framework</li>
+                                        <li>JUnit Testing</li>
+                                        <li>RESTful APIs</li>
+                                        <li>Microservices Architecture</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-python"></i> Python 3</span>
+                                <span><i class="fas fa-database"></i> Data Science</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Python programming with data science applications</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>Python Fundamentals</li>
+                                        <li>Data Structures in Python</li>
+                                        <li>Object-Oriented Programming</li>
+                                        <li>Data Science Libraries</li>
+                                        <li>Machine Learning Basics</li>
+                                        <li>Python Best Practices</li>
+                                        <li>Flask & Django</li>
+                                        <li>Data Analysis</li>
+                                        <li>Web Scraping</li>
+                                        <li>Automation Scripts</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                                <span><i class="fab fa-react"></i> React</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Modern JavaScript development with React</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>ES6+ Features</li>
+                                        <li>DOM Manipulation</li>
+                                        <li>React Components</li>
+                                        <li>Node.js Backend</li>
+                                        <li>RESTful APIs</li>
+                                        <li>Modern JavaScript Tools</li>
+                                        <li>State Management</li>
+                                        <li>React Hooks</li>
+                                        <li>Next.js Framework</li>
+                                        <li>Testing with Jest</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Frontend</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-react"></i> React</span>
+                                <span><i class="fab fa-html5"></i> HTML5</span>
+                                <span><i class="fab fa-CSS"></i>CSS</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Modern frontend development with React</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>React.js Development</li>
+                                        <li>Component Architecture</li>
+                                        <li>State Management</li>
+                                        <li>React Hooks</li>
+                                        <li>Redux & Context API</li>
+                                        <li>Next.js Framework</li>
+                                        <li>HTML5 & CSS3</li>
+                                        <li>JavaScript (ES6+)</li>
+                                        <li>TypeScript</li>
+                                        <li>Testing & Debugging</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Backend</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-node-js"></i> Node.js</span>
+                                <span><i class="fas fa-database"></i> MongoDB</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Backend development with Node.js and MongoDB</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>Node.js Development</li>
+                                        <li>Express.js Framework</li>
+                                        <li>MongoDB Database</li>
+                                        <li>RESTful APIs</li>
+                                        <li>Authentication & Authorization</li>
+                                        <li>API Integration</li>
+                                        <li>Database Design</li>
+                                        <li>Server Architecture</li>
+                                        <li>Performance Optimization</li>
+                                        <li>Security Best Practices</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DSA & CP -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code-branch"></i> DSA & CP</h3>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Data Structures</h4>
+                            <div class="skill-tech">
+                                <span><i class="fas fa-project-diagram"></i> DSA</span>
+                                <span><i class="fas fa-code"></i> Implementation</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Advanced data structures and algorithms</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>Arrays & Strings</li>
+                                        <li>Linked Lists</li>
+                                        <li>Stacks & Queues</li>
+                                        <li>Trees & Graphs</li>
+                                        <li>Hash Tables</li>
+                                        <li>Heaps & Priority Queues</li>
+                                        <li>Advanced Data Structures</li>
+                                        <li>Algorithm Analysis</li>
+                                        <li>Space-Time Complexity</li>
+                                        <li>Problem-Solving Patterns</li>
+                                         <li>Algorithm Optimization</li>
+                                        <li>Dynamic Programming</li>
+                                        <li>Greedy Algorithms</li>
+                                        <li>Graph Algorithms</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                       
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Version Control</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-git-alt"></i> Git</span>
+                                <span><i class="fab fa-github"></i> GitHub</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Version control and collaboration tools</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>Git Version Control</li>
+                                        <li>GitHub Collaboration</li>
+                                        <li>Branch Management</li>
+                                        <li>Code Review</li>
+                                        <li>CI/CD Integration</li>
+                                        <li>Repository Management</li>
+                                        <li>Git Workflows</li>
+                                        <li>Version Control Best Practices</li>
+                                        <li>Team Collaboration</li>
+                                        <li>Project Documentation</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Cloud Development</h4>
+                            <div class="skill-tech">
+                                <span><i class="fab fa-aws"></i> AWS</span>
+                                <span><i class="fab fa-azure"></i> Azure</span>
+                                <span><i class="fab fa-oracle"></i> Oracle</span>
+                                <span><i class="fas fa-database"></i> Kaggle</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">
+                                    Cloud infrastructure and services management
+                                </div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>Cloud Computing Fundamentals</li>
+                                        <li>Infrastructure as Code (IaC)</li>
+                                        <li>Container Orchestration</li>
+                                        <li>Serverless Architecture</li>
+                                        <li>Cloud Security & Compliance</li>
+                                        <li>Cost Optimization</li>
+                                        <li>Data Warehousing</li>
+                                        <li>Machine Learning Platforms</li>
+                                        <li>Cloud Migration</li>
+                                        <li>DevOps Integration</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">
+                                    Read More <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Development Tools</h4>
+                            <div class="skill-tech">
+                                <span><i class="fas fa-code"></i> VS Code</span>
+                                <span><i class="fas fa-terminal"></i> Terminal</span>
+                            </div>
+                            <div class="skill-description">
+                                <div class="short-desc">Essential development tools and environments</div>
+                                <div class="full-desc">
+                                    <ul>
+                                        <li>VS Code Editor</li>
+                                        <li>Terminal Usage</li>
+                                        <li>Debugging Tools</li>
+                                        <li>Package Managers</li>
+                                        <li>Development Environment</li>
+                                        <li>Code Quality Tools</li>
+                                        <li>Performance Profiling</li>
+                                        <li>Testing Frameworks</li>
+                                        <li>Documentation Tools</li>
+                                        <li>Development Workflow</li>
+                                    </ul>
+                                </div>
+                                <button class="read-more">Read More <i class="fas fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card" data-tilt>
+                    <span class="timeline-date">Now</span>
+                    <h3>IT intern at UttarPradesh Metro Rail Corporation, Lucknow</h3>
+                    <p>Assisting the IT department in maintaining computer systems, troubleshooting hardware and software issues, managing network resources, and providing technical support to employees.</p>
+                    <li>Provided technical support for hardware, software, and network-related issues.
+   <li>Assisted in system maintenance, software installation, and troubleshooting.</li>
+<li>Monitored IT infrastructure and resolved day-to-day technical problems.</li>
+<li>Maintained IT documentation and supported users with technical queries.</li>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card" data-tilt>
+                    <span class="timeline-date">Software Developer</span>
+                    <h3>DSA and Problem Solving</h3>
+                    <p>Sharpening algorithmic thinking with 300+ solved problems across Codeforces and LeetCode.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content tilt-card" data-tilt>
+                    <span class="timeline-date">Education</span>
+                    <h3>B.Tech Computer Science</h3>
+                    <p>Studying Computer Science Engineering at Babu Banarasi Das University with a focus on scalable software.</p>
+                    <li>Maintained a CGPA of 8.5/10 with strong academic performance.</li>
+<li>Strong foundation in Mathematics and core Computer Science subjects including Data Structures & Algorithms,<br> Object-Oriented Programming, Database Management Systems (DBMS), Operating Systems (OS), Computer Networks (CN), and Software Engineering.</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Achievement-->
+    <section id="achievements">
+    <h2>Achievements</h2>
+
+    <div class="achievement">
+        <h3>LinkedIn Technical Content Creator</h3>
+        <p>• Published educational content on Data Structures & Algorithms, reaching thousands of learners.</p>
+        <p>• Binary Tree post: <strong>1,734+ Likes</strong> | <strong>160K+ Impressions</strong></p>
+        <p>• Graphs post: <strong>934+ Likes</strong> | <strong>130K+ Impressions</strong></p>
+        <p>• Other DSA posts consistently received <strong>500–560+ Likes</strong>.</p>
+        <p>• Generated over <strong>290K+ total post impressions</strong> across LinkedIn while simplifying complex Computer Science concepts.</p>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-header">
+                <div class="contact-logo">
+                    <div class="logo">
+                        <img src="logo.png" alt="Shivam yadav logo">
+                    </div>
+                </div>
+                <div class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:shivam0011ydv@gmail.com">shivam0011ydv@gmail.com</a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Shivam Yadav. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
