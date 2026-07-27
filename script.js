@@ -239,7 +239,7 @@ function initContactForm() {
         const status = qs('.form-status', form);
         button.classList.add('is-sent');
         button.innerHTML = '<i class="fas fa-check"></i> Message Ready';
-        status.textContent = 'Thanks for reaching out. You can also email me directly at bhardwajshubhankit@gmail.com.';
+        status.textContent = 'Thanks for reaching out. You can also email me direct at shivam0011ydv@gmail.com.';
         form.reset();
 
         setTimeout(() => {
